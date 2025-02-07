@@ -1,0 +1,465 @@
+* {
+    font-size: 115%;
+    scroll-padding-top: 20%;
+    =scroll-behavior: smooth;
+}
+
+body {
+    background-attachment: scroll;
+    background-image: url(../anhr/nền_01.png);
+    
+    background-size: 100%;
+    font-size: 80%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    width: 90%;
+    height: 60%;
+    background-position: center;
+
+}
+
+#mo_dau {
+    margin: 1% auto 1% auto;
+    overflow: auto;
+    background-position: left;
+    display: flex;
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#chuyen_trang {
+    position: fixed;
+    color: aquamarine;
+    width: 90%;
+    margin-left: -10.12%;
+    margin-top: -1%;
+    margin-right: 1%;
+    padding-right: 5%;
+    padding-left: 4%;
+    padding-top: 10px;
+    overflow: auto;
+    text-align: center;
+    padding-left: 5%;
+    z-index: 13;
+    overflow: visible;
+}
+
+h1 {
+    text-align: left;
+    font-size: 240%;
+    color: aqua;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.h2_lui{
+    padding-left: 2%;
+    font-weight: 600;
+}
+h3 {
+    font-weight: 400;
+    padding-left: 2%;
+}
+.h3_lui{
+    padding-left: 5%;
+}
+.menu {
+    background-position: left;
+    width: 15%;
+    height: 10%;
+    font-size: 80%;
+    text-align: left;
+    margin-top: 15%;
+    margin-left: 4%;
+    margin-right: 2%;
+    overflow: auto;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    background-color: rgba(219, 219, 219, 0.808);
+    line-height: 300%;
+    border: 2px solid rgb(196, 196, 196);
+}
+
+li {
+    list-style: none;
+}
+
+.menu ul li::after {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../anhr/pngegg_xuong.png);
+    /* Đường dẫn đến ảnh */
+    background-size: contain;
+    /* Làm cho ảnh vừa với kích thước */
+    background-repeat: no-repeat;
+    /* Không lặp lại ảnh */
+    opacity: 0.5;
+    /* Ảnh sẽ ẩn đi */
+    transition: opacity 0.3s ease;
+    /* Hiệu ứng mờ dần */
+}
+
+.menu ul li:hover::after {
+    opacity: 1;
+    /* Hiển thị ảnh khi hover */
+}
+
+menu ul li {
+    display: inline-flex;
+    margin-left: 0%;
+}
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: rgb(161, 161, 161);
+    color: white;
+}
+
+.menu a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.noi_dung {
+    border: 2px solid rgb(196, 196, 196, 0.808);
+    border-bottom: none;
+    overflow: auto;
+    width: 65%;
+    margin-top: 15%;
+    color: rgb(17, 17, 17);
+    background-color: rgba(255, 255, 255, 0.808);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.mo {
+    font-size: 70%;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    outline: 0;
+    border: 2px solid rgb(51, 51, 51);
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 5px;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0; /* Xóa padding ở .mo */
+    box-sizing: border-box; /* Đảm bảo .mo không bị ảnh hưởng bởi padding */
+}
+.mo a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    display: block;
+    padding: 2% 2% 20%; /* Đặt padding vào .mo a */
+    box-sizing: border-box; /* Đảm bảo padding tính vào kích thước của .mo a */
+    width: 100%; /* Đảm bảo .mo a chiếm 100% chiều rộng của .mo */
+    height: 100%; /* Đảm bảo .mo a chiếm 100% chiều cao của .mo */
+}
+.mo:after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: -7px;
+    left: 7px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.mo:before {
+    content: "";
+    background-color: rgb(211, 211, 211);
+    /* Màu sắc có thể khác */
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    right: 7px;
+    /* Di chuyển sang bên phải */
+    transition: 0.2s;
+    border-radius: 10px;
+    /* Bo tròn các góc của nút */
+}
+
+.mo:before {
+    content: "";
+    background-color: rgb(211, 211, 211);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    right: 7px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.mo:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+.mo:hover:before {
+    top: 0px;
+    right: 0px;
+}
+
+@media (min-width: 768px) {
+    .mo {
+        padding: 0; /* Đảm bảo không có padding tại .mo */
+    }
+
+    .mo a {
+        padding: 13px 50px 13px; /* Đưa padding vào .mo a */
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 16px;
+    border-radius: 10px;
+    /* Bo tròn các góc của nút */
+    border: 2px solid rgb(51, 51, 51);
+    transition: 0.2s;
+    font-style: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: rgb(17, 17, 17);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(114, 114, 114, 0.5);
+    border-radius: 10px;
+    /* Bo tròn các góc của nút */
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    transition: 0.1s;
+    font-style: bold;
+}
+
+.dropdown:hover .mo::after {
+    top: 0px;
+    left: 0px;
+}
+
+.dropdown:hover .mo::before {
+    top: 0px;
+    right: 0px;
+    /* Di chuyển về phía ngược lại khi hover */
+}
+
+.logo {
+    position: fixed;
+    top: 1%;
+    left: 0%;
+    width: 85px;
+    height: auto;
+    z-index: 101;
+}
+
+footer {
+    margin-left: -20%;
+    margin-right: -10%;
+}
+
+.chan {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: visible;
+    text-align: center;
+    font-size: 90%;
+    background-color: rgb(148, 124, 124);
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.phan_dau {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.anh_thay {
+    width: 20%;
+    display: inline;
+    border: 2px solid black;
+}
+
+.inline {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+.box_to {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 600px;
+}
+
+.map {
+    width: 100%;
+    height: 99%;
+    overflow: visible;
+}
+.map_nho{
+    width: 50%;
+    height: 200px;
+}
+
+.xoa_gach_chan a {
+    text-decoration: none;
+}
+
+.xoa_gach_chan a:hover {
+    color: rgb(250, 28, 28);
+}
+
+.mat {
+    border: 0px white solid;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.9%;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(110, 209, 255);
+    color: rgb(255, 255, 255);
+}
+
+.bang {
+    font-size: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8%;
+}
+
+.dong_dau_bang {
+    font-size: 150%;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(249, 249, 249);
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: rgb(198, 228, 255, 0.808);
+}
+
+.A,.A1,.B,.C,.D,.D07 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.sub {
+    font-size: 80%;
+}
+
+.A,.A1 {
+    background-color: rgb(255, 141, 76);
+}
+
+.B {
+    background-color: rgb(100, 255, 80);
+}
+
+.C {
+    background-color: rgb(67, 155, 255);
+}
+
+.D,.D07 {
+    background-color: rgb(36, 94, 253);
+}
+.loi_dau{
+    font-family: "Playwrite IN", serif;
+}
+.inline_chu{
+    display: inline-block;
+    width: 60%;
+    
+    vertical-align: top;
+}
+.inline_anh{
+    display: inline;
+    width: 30%;
+}
+.anh_thay_nho{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.anh_thay_nho img{
+    width: 180px;
+    
+}
+.anh_thay_nho h3{
+    position: sticky;
+    padding: 0%;
+}
+.h100{
+    width: 100%;
+}
