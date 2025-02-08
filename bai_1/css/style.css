@@ -463,3 +463,7 @@ tr:hover {
 .h100{
     width: 100%;
 }
+.ban_chan{
+    padding-left: 20%;
+    text-align: left;
+}
