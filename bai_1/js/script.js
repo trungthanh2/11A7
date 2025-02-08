@@ -1,21 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let texts = document.querySelectorAll(".ban_chan"); // Lấy tất cả phần tử có class movingText
+    let text = document.querySelector(".ban_chan");
 
-    texts.forEach((text, index) => {
-        let position = 0;
-        let direction = 1;
-        const speed = 5;
-        
-        function moveText() {
-            let maxWidth = window.innerWidth - text.offsetWidth; // Tính toán lại khi resize
-
-            position += speed * direction;
-            if (position >= maxWidth || position <= 0) {
-                direction *= -1; // Đảo chiều khi chạm mép
-            }
-            text.style.left = position + "px";
-        }
-
-        setInterval(moveText, 50);
+    text.addEventListener("click", function () {
+        text.style.animation = "none"; // Tắt animation
+        text.style.left = "0"; // Quay về vị trí ban đầu
+        // Sau 2 giây, animation chạy lại
+        setTimeout(() => {
+            text.style.animation = "moveText 4s linear infinite alternate";
+        }, 2500); // 2500ms = 2.5 giây
     });
 });

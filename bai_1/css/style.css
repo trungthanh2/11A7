@@ -312,7 +312,6 @@ footer {
     margin-top: auto;
     margin-bottom: auto;
     overflow: visible;
-    text-align: center;
     font-size: 90%;
     background-color: rgb(148, 124, 124);
     color: white;
@@ -466,4 +465,17 @@ tr:hover {
 .ban_chan{
     padding-left: 20%;
     text-align: left;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    animation: moveText 4s linear infinite alternate;
+    width: 60%;
+}
+
+@keyframes moveText {
+    0% { left: -10%; }
+    100% { left: 30%; }
 }
