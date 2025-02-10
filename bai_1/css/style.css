@@ -1,13 +1,13 @@
 * {
     font-size: 115%;
     scroll-padding-top: 20%;
-    =scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     background-attachment: scroll;
     background-image: url(../anhr/nền_01.png);
-    
+
     background-size: 100%;
     font-size: 80%;
     margin-left: 10%;
@@ -55,25 +55,26 @@ a:hover {
 
 h1 {
     text-align: left;
-    font-size: 240%;
-    color: aqua;
-    margin-top: 2%;
-    margin-bottom: 0%;
-    margin-left: auto;
-    margin-right: auto;
-
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+    margin-left: -2%;
+    
 }
-.h2_lui{
+
+.h2_lui {
     padding-left: 2%;
     font-weight: 600;
 }
+
 h3 {
     font-weight: 400;
     padding-left: 2%;
 }
-.h3_lui{
+
+.h3_lui {
     padding-left: 5%;
 }
+
 .menu {
     background-position: left;
     width: 15%;
@@ -95,7 +96,7 @@ li {
     list-style: none;
 }
 
-.menu ul li::after {
+.trigger::after {
     content: " ";
     display: inline-block;
     width: 16px;
@@ -112,16 +113,11 @@ li {
     /* Hiệu ứng mờ dần */
 }
 
+
 .menu ul li:hover::after {
     opacity: 1;
     /* Hiển thị ảnh khi hover */
 }
-
-menu ul li {
-    display: inline-flex;
-    margin-left: 0%;
-}
-
 .menu a:hover {
     text-decoration: none;
 }
@@ -136,7 +132,15 @@ menu ul li {
     height: 100%;
     display: block;
 }
-
+.nhan_hien{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 100%;
+}
+.lui_binh_thuong{
+    padding-left: 25px;
+}
 .noi_dung {
     border: 2px solid rgb(196, 196, 196, 0.808);
     border-bottom: none;
@@ -165,18 +169,26 @@ menu ul li {
     margin-right: 20px;
     border-radius: 10px;
     display: inline-block;
-    padding: 0; /* Xóa padding ở .mo */
-    box-sizing: border-box; /* Đảm bảo .mo không bị ảnh hưởng bởi padding */
+    padding: 0;
+    /* Xóa padding ở .mo */
+    box-sizing: border-box;
+    /* Đảm bảo .mo không bị ảnh hưởng bởi padding */
 }
+
 .mo a {
     text-decoration: none;
     color: rgb(82, 82, 82);
     display: block;
-    padding: 2% 2% 20%; /* Đặt padding vào .mo a */
-    box-sizing: border-box; /* Đảm bảo padding tính vào kích thước của .mo a */
-    width: 100%; /* Đảm bảo .mo a chiếm 100% chiều rộng của .mo */
-    height: 100%; /* Đảm bảo .mo a chiếm 100% chiều cao của .mo */
+    padding: 2% 2% 20%;
+    /* Đặt padding vào .mo a */
+    box-sizing: border-box;
+    /* Đảm bảo padding tính vào kích thước của .mo a */
+    width: 100%;
+    /* Đảm bảo .mo a chiếm 100% chiều rộng của .mo */
+    height: 100%;
+    /* Đảm bảo .mo a chiếm 100% chiều cao của .mo */
 }
+
 .mo:after {
     content: "";
     background-color: rgba(255, 255, 255, 0.8);
@@ -231,11 +243,13 @@ menu ul li {
 
 @media (min-width: 768px) {
     .mo {
-        padding: 0; /* Đảm bảo không có padding tại .mo */
+        padding: 0;
+        /* Đảm bảo không có padding tại .mo */
     }
 
     .mo a {
-        padding: 13px 50px 13px; /* Đưa padding vào .mo a */
+        padding: 13px 50px 13px;
+        /* Đưa padding vào .mo a */
     }
 }
 
@@ -353,7 +367,8 @@ footer {
     height: 99%;
     overflow: visible;
 }
-.map_nho{
+
+.map_nho {
     width: 50%;
     height: 200px;
 }
@@ -401,6 +416,7 @@ th {
 tr:nth-child(even) {
     background-color: rgb(249, 249, 249);
 }
+
 tr:nth-child(odd) {
     background-color: #ffffff;
 }
@@ -439,7 +455,6 @@ tr:hover {
 .inline_chu{
     display: inline-block;
     width: 60%;
-    
     vertical-align: top;
 }
 .inline_anh{
@@ -453,7 +468,7 @@ tr:hover {
 }
 .anh_thay_nho img{
     width: 180px;
-    
+
 }
 .anh_thay_nho h3{
     position: sticky;
@@ -468,14 +483,26 @@ tr:hover {
     overflow: hidden;
     position: relative;
     width: 200px;
-    
+
     font-weight: bold;
     color: rgb(255, 255, 255);
-    animation: moveText 4s linear infinite alternate;
+    animation: moveText 5s linear infinite alternate;
     width: 60%;
 }
 
 @keyframes moveText {
     0% { left: -10%; }
     100% { left: 30%; }
+}
+.inline_co_cau_chu{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+.inline_co_cau_anh{
+    display: inline;
+    width: 30%;
+}
+.nhan_hien:not(.active) li:not(.trigger) {
+    display: none;
 }

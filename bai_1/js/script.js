@@ -10,3 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 2500); // 2500ms = 2.5 giây
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".nhan_hien .trigger").forEach(trigger => {
+        trigger.addEventListener("click", function () {
+            this.parentElement.classList.toggle("active");
+        });
+    });
+});
