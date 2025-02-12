@@ -1,7 +1,7 @@
 * {
     font-size: 115%;
     scroll-padding-top: 20%;
-    scroll-behavior: smooth;
+    =scroll-behavior: smooth;
 }
 
 body {
@@ -505,4 +505,88 @@ tr:hover {
 }
 .nhan_hien:not(.active) li:not(.trigger) {
     display: none;
+}
+.tree {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+.tree li {
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+    padding: 20px 10px 0 10px;
+}
+.tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 20px;
+    border-top: 3px solid #52f3ff;
+}
+.tree li::before {
+    right: 50%;
+}
+.tree li::after {
+    left: 50%;
+    border-left: 3px solid #52f3ff;
+}
+.tree li > ul::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 0;
+    height: auto;
+    border-left: 3px solid #52f3ff;
+}
+.tree li:only-child::before, .tree li:only-child::after {
+    display: none;
+}
+.tree li:first-child::before, .tree li:last-child::after {
+    border: none;
+}
+.tree a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #55aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #cbbfff;
+    font-size: 100%;
+    min-width: 150px;
+}
+.tree a:hover {
+    background-color: rgb(111, 207, 252);
+}
+.tree .toggle {
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 8px;
+    background: #0065fc;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.tree .toggle:hover {
+    background: #4bc6ff;
+}
+.tree ul.hidden {
+    display: none;
+}
+.to_chuyen_mon {
+    width: 150px;
+    display: block;
+    text-align: center;
 }

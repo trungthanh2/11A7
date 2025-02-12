@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          setTimeout(function() {
+            const element = document.querySelector(".to_chuyen_mon");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 500); // Đợi 0.5 giây để đảm bảo trang đã tải xong
+        });
+      </script>
     <div>
         <img src="../anhr/HDA_Logo.png" alt="anh_nen" class="logo" loading="eager">
     </div>
@@ -63,19 +73,31 @@
         <div class="menu" class="mat"
             style="border: 2px solid rgba(255, 255, 255, 0); background-color: rgba(255, 255, 255, 0);"></div>
     </div>
+    <div class="noi_dung">
+        <p>
+        <h1>Cơ cấu tổ chức:</h1>
+    </div>
     <div class="tree">
         <ul>
             <li>
-                <div>A</div>
-                <ul>
+                <a href="co_cau_to_chuc.html">Chi bộ đảng</a>
+                <span class="toggle">▼</span>
+                <ul class="hidden">
                     <li>
-                        <div>B</div>
-                        <ul class="horizontal">
-                            <li><div>C</div></li>
-                            <li><div>D</div></li>
-                            <li><div>E</div></li>
-                            <li><div>F</div></li>
-                            <li><div>G</div></li>
+                        <a href="co_cau_to_chuc.html">Ban giám hiệu</a>
+                        <span class="toggle">▼</span>
+                        <ul class="hidden">
+                            <li>
+                                <a href="co_cau_to_chuc.html">Các tổ chuyên môn</a>
+                                <span class="toggle">▼</span>
+                                <ul class="hidden">
+                                    <li><a href="co_cau_to_chuc.html" class="to_chuyen_mon">Tổ Toán - Tin</a></li>
+                                    <li><a href="co_cau_to_chuc.html" class="to_chuyen_mon">Tổ Ngữ Văn - Thể dục - Quốc Phòng</a></li>
+                                    <li><a href="co_cau_to_chuc.html" class="to_chuyen_mon">Tổ Khoa học tự nhiên</a></li>
+                                    <li><a href="co_cau_to_chuc.html" class="to_chuyen_mon">Tổ Ngoại Ngữ</a></li>
+                                    <li><a href="co_cau_to_chuc.html" class="to_chuyen_mon">Tổ Xã hội</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -84,4 +106,5 @@
     </div>
 
 </body>
+
 </html>
