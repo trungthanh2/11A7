@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         trigger.addEventListener("click", function () {
             this.parentElement.classList.toggle("active");
         });
-    });  
+    });
 });
 document.addEventListener("DOMContentLoaded", function () {
     // Mặc định mở tất cả các nhánh khi tải trang

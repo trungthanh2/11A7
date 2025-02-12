@@ -1,7 +1,7 @@
 * {
     font-size: 115%;
     scroll-padding-top: 20%;
-    =scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -58,7 +58,7 @@ h1 {
     font-size: 200%;
     color: rgb(0, 0, 0);
     margin-left: -2%;
-    
+
 }
 
 .h2_lui {
@@ -118,6 +118,7 @@ li {
     opacity: 1;
     /* Hiển thị ảnh khi hover */
 }
+
 .menu a:hover {
     text-decoration: none;
 }
@@ -132,15 +133,18 @@ li {
     height: 100%;
     display: block;
 }
-.nhan_hien{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 100%;
+
+.nhan_hien {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
 }
-.lui_binh_thuong{
+
+.lui_binh_thuong {
     padding-left: 25px;
 }
+
 .noi_dung {
     border: 2px solid rgb(196, 196, 196, 0.808);
     border-bottom: none;
@@ -425,7 +429,12 @@ tr:hover {
     background-color: rgb(198, 228, 255, 0.808);
 }
 
-.A,.A1,.B,.C,.D,.D07 {
+.A,
+.A1,
+.B,
+.C,
+.D,
+.D07 {
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -434,7 +443,8 @@ tr:hover {
     font-size: 80%;
 }
 
-.A,.A1 {
+.A,
+.A1 {
     background-color: rgb(255, 141, 76);
 }
 
@@ -446,38 +456,47 @@ tr:hover {
     background-color: rgb(67, 155, 255);
 }
 
-.D,.D07 {
+.D,
+.D07 {
     background-color: rgb(36, 94, 253);
 }
-.loi_dau{
+
+.loi_dau {
     font-family: "Playwrite IN", serif;
 }
-.inline_chu{
+
+.inline_chu {
     display: inline-block;
     width: 60%;
     vertical-align: top;
 }
-.inline_anh{
+
+.inline_anh {
     display: inline;
     width: 30%;
 }
-.anh_thay_nho{
+
+.anh_thay_nho {
     width: 200px;
     display: inline-block;
     vertical-align: top;
 }
-.anh_thay_nho img{
+
+.anh_thay_nho img {
     width: 180px;
 
 }
-.anh_thay_nho h3{
+
+.anh_thay_nho h3 {
     position: sticky;
     padding: 0%;
 }
-.h100{
+
+.h100 {
     width: 100%;
 }
-.ban_chan{
+
+.ban_chan {
     padding-left: 20%;
     text-align: left;
     overflow: hidden;
@@ -491,26 +510,36 @@ tr:hover {
 }
 
 @keyframes moveText {
-    0% { left: -10%; }
-    100% { left: 30%; }
+    0% {
+        left: -10%;
+    }
+
+    100% {
+        left: 30%;
+    }
 }
-.inline_co_cau_chu{
+
+.inline_co_cau_chu {
     display: inline-block;
     width: 60%;
     vertical-align: top;
 }
-.inline_co_cau_anh{
+
+.inline_co_cau_anh {
     display: inline;
     width: 30%;
 }
+
 .nhan_hien:not(.active) li:not(.trigger) {
     display: none;
 }
+
 .tree {
     text-align: center;
     display: flex;
     justify-content: center;
 }
+
 .tree ul {
     padding-top: 20px;
     position: relative;
@@ -519,13 +548,16 @@ tr:hover {
     padding-left: 0;
     flex-wrap: wrap;
 }
+
 .tree li {
     position: relative;
     list-style-type: none;
     text-align: center;
     padding: 20px 10px 0 10px;
 }
-.tree li::before, .tree li::after {
+
+.tree li::before,
+.tree li::after {
     content: '';
     position: absolute;
     top: 0;
@@ -533,14 +565,17 @@ tr:hover {
     height: 20px;
     border-top: 3px solid #52f3ff;
 }
+
 .tree li::before {
     right: 50%;
 }
+
 .tree li::after {
     left: 50%;
     border-left: 3px solid #52f3ff;
 }
-.tree li > ul::before {
+
+.tree li>ul::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -549,12 +584,17 @@ tr:hover {
     height: auto;
     border-left: 3px solid #52f3ff;
 }
-.tree li:only-child::before, .tree li:only-child::after {
+
+.tree li:only-child::before,
+.tree li:only-child::after {
     display: none;
 }
-.tree li:first-child::before, .tree li:last-child::after {
+
+.tree li:first-child::before,
+.tree li:last-child::after {
     border: none;
 }
+
 .tree a {
     display: inline-block;
     padding: 10px 15px;
@@ -566,9 +606,11 @@ tr:hover {
     font-size: 100%;
     min-width: 150px;
 }
+
 .tree a:hover {
     background-color: rgb(111, 207, 252);
 }
+
 .tree .toggle {
     cursor: pointer;
     font-size: 12px;
@@ -579,45 +621,55 @@ tr:hover {
     border-radius: 50%;
     display: inline-block;
 }
+
 .tree .toggle:hover {
     background: #4bc6ff;
 }
+
 .tree ul.hidden {
     display: none;
 }
+
 .to_chuyen_mon {
     width: 150px;
     display: block;
     text-align: center;
 }
-.anh_doan{
+
+.anh_doan {
     display: inline-block;
     width: 50%;
 }
-.anh_ban_giam_hieu{
+
+.anh_ban_giam_hieu {
     display: inline-block;
     width: 20%;
 }
-.anh_to_chuyen_de{
+
+.anh_to_chuyen_de {
     display: inline-block;
     width: 60%;
 }
-.chu_to_chuyen_de{
+
+.chu_to_chuyen_de {
     display: inline-block;
     width: 30%;
     vertical-align: top;
-}    
-.chu_phan_co_cau-canh{
+}
+
+.chu_phan_co_cau-canh {
     display: inline;
     width: 20%;
     vertical-align: top;
 }
-.chu_phan_co_cau-duoi{
+
+.chu_phan_co_cau-duoi {
     display: inline-block;
     width: 80%;
     vertical-align: top;
 }
-.anh_thay-chu{
+
+.anh_thay-chu {
     border: #0065fc solid 2px;
 
 }
