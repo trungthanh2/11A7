@@ -648,12 +648,12 @@ tr:hover {
 
 .anh_to_chuyen_de {
     display: inline-block;
-    width: 60%;
+    width: 40%;
 }
 
 .chu_to_chuyen_de {
     display: inline-block;
-    width: 30%;
+    width: 50%;
     vertical-align: top;
 }
 
@@ -669,7 +669,10 @@ tr:hover {
     vertical-align: top;
 }
 
-.anh_thay-chu {
-    border: #0065fc solid 2px;
-
+.link_to_chuyen_de{
+    font-size: inherit;
+}
+.link_to_chuyen_de:hover {
+    text-decoration: none;
+    color: #4bc6ff;
 }
