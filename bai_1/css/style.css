@@ -563,7 +563,7 @@ tr:hover {
     top: 0;
     width: 50%;
     height: 20px;
-    border-top: 3px solid #52f3ff;
+    /*border-top: 3px solid #52f3ff;*/
 }
 
 .tree li::before {
@@ -572,7 +572,7 @@ tr:hover {
 
 .tree li::after {
     left: 50%;
-    border-left: 3px solid #52f3ff;
+    /*border-left: 3px solid #52f3ff;*/
 }
 
 .tree li>ul::before {
@@ -582,7 +582,7 @@ tr:hover {
     left: 50%;
     width: 0;
     height: auto;
-    border-left: 3px solid #52f3ff;
+    /*border-left: 3px solid #52f3ff;*/
 }
 
 .tree li:only-child::before,
@@ -598,7 +598,7 @@ tr:hover {
 .tree a {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #55aaff;
+    background-color: #2e97ff;
     color: white;
     text-decoration: none;
     border-radius: 6px;
