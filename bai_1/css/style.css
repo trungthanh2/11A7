@@ -585,8 +585,7 @@ tr:hover {
     /*border-left: 3px solid #52f3ff;*/
 }
 
-.tree li:only-child::before,
-.tree li:only-child::after {
+.tree li:only-child::before,.tree li:only-child::after {
     display: none;
 }
 
